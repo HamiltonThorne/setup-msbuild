@@ -11,6 +11,9 @@ inputs:
   vs-version:
     description: 'Version of Visual Studio to search; defaults to latest if not specified'
     required: false
+  legacy:
+    description: 'If set to true will enable the -legacy command line argument of vswhere.exe'
+    required: false
 outputs:
   msbuildPath:
     description: 'The resulting location of msbuild for your inputs'
